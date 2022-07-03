@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+
+<div th:each="user : ${users}">
+    <table border="1">
+        <tr   height="50">
+            <td width="30"><a th:text="${user.getId()}"></a></td>
+            <td width="150"><a th:text="${user.getName()}"></a></td>
+            <td width="150"><a th:text="${user.getLastname()}"></a></td>
+            <td width="30"><a th:text="${user.getAge()}"></a></td>
+            <td width="40"><a th:href=@{/{id}/edit(id=${user.getId()})}>edit</a></td>
+            <td width="40"><a th:href=@{/{id}/delete(id=${user.getId()})}>delete</a></td>
+<!--            <td width="40"><a th:href=""  </td>-->
+        </tr>
+    </table>
+</div>
+<br>
+
+<a href="/new">add new user</a>
+
+</body>
+</html>
