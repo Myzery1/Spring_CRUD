@@ -15,7 +15,6 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
@@ -68,19 +67,8 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.29</version>
         </dependency>
-
-
     </dependencies>
 
-
-
     <packaging>war</packaging>
-
-<!--    <properties>-->
-<!--        <spring.version>5.3.14</spring.version>-->
-
-<!--        <maven.compiler.source>16</maven.compiler.source>-->
-<!--        <maven.compiler.target>16</maven.compiler.target>-->
-<!--    </properties>-->
 
 </project>
